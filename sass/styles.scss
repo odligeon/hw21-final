@@ -1,0 +1,217 @@
+@import "reset";
+@import "mixins";
+@import "vars";
+
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+html {
+  font: 400 16px Montserrat, sans-serif;
+  color: $text-color;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.285rem;
+}
+
+a {
+  color: $text-color;
+  font-weight: 700;
+}
+
+.container {
+  padding: 0 160px;
+  max-width: 1920px;
+  margin: auto;
+}
+
+
+main {
+  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%) no-repeat;
+  border-radius: 0 0 12px 12px;
+
+  .splash {
+    height: 1000px;
+    margin-bottom: 60px;
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 50px;
+      position: relative;
+      z-index: 2;
+
+      .header__info__wrapper {
+        @include flex;
+        margin-bottom: 16px;
+
+        .languages__list {
+          @include flex;
+          font-size: 0.75rem;
+
+          &:after {
+            @include separator;
+          }
+
+          .language__item {
+            padding: 5px 7px;
+
+            &:hover {
+              background: #F0145A;
+              border-radius: 8px;
+            }
+          }
+        }
+
+        .header__address > *, .header__address {
+          @include flex;
+        }
+
+        .header__address > *:not(:last-child):after {
+          @include separator;
+        }
+      }
+
+      .header__nav {
+        @include flex;
+        justify-content: end;
+        gap: 15px;
+
+        .header__nav__item {
+          &:after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: transparent;
+          }
+
+          &:hover > a {
+            color: $accent-color;
+          }
+
+          &:hover:after {
+            background: $accent-color;
+          }
+        }
+      }
+    }
+
+    .symbol__wrapper {
+      position: relative;
+      z-index: 1;
+      left: calc(50% - 872.34px / 2 + 0.17px);
+      top: -113px;
+      max-width: 872.34px;
+
+      .main__image-bg {
+        height: 1000px;
+      }
+
+      h1 {
+        position: absolute;
+        font-size: 2.375rem;
+        line-height: 2.875rem;
+        text-align: center;
+        top: calc(50% - 46px / 2);
+        left: calc(50% - 800px / 2);
+        width: 800px;
+        font-weight: 700;
+      }
+
+      .button-wrapper {
+        position: absolute;
+        width: 42px;
+        height: 42px;
+        left: calc(50% - 42px / 2);
+        bottom: 30px;
+
+        .button-scroll {
+          opacity: 0.5;
+          border: 2px solid #FFFFFF;
+          border-radius: 50%;
+          display: block;
+          height: 100%;
+        }
+
+        img {
+          position: absolute;
+          top: 18px;
+          left: 11px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .exp__section {
+    @include flex;
+    padding: 0 280px;
+    gap: 60px;
+    margin-bottom: 60px;
+
+    .exp__tabs {
+      max-width: 375px;
+      font-weight: 700;
+      font-size: 2.375rem;
+      white-space: nowrap;
+      color: $gray;
+
+      .exp__list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        line-height: 2.875rem;
+        gap: 30px;
+
+        .tablink {
+          font-family: inherit;
+          font-size: 100%;
+          margin: 0;
+          color: inherit;
+          background-color: transparent;
+          border: none;
+          font-weight: 700;
+          padding: 0;
+
+          &:hover {
+            color: $accent-color;
+          }
+        }
+      }
+    }
+
+    .divider-line {
+      width: 4px;
+      height: 303px;
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    .exp__descr__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 30px;
+
+      p {
+        font-size: 1.1875rem;
+        line-height: 1.875rem;
+      }
+    }
+
+    .active {
+      background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-fill-color: transparent;
+    }
+
+    #customer,#innovative,#business{
+      display: none;
+    }
+  }
+}
