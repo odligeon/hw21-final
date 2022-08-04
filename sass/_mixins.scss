@@ -1,0 +1,40 @@
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin separator {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: $separator-color;
+  border-radius: 50%;
+  margin: 0 6px;
+}
+
+@mixin gradient-red-text {
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.375rem;
+  line-height: 2.875rem;
+  font-weight: 700;
+}
+
+@mixin link-14-17 {
+  font-weight: 700;
+  font-size: $fs-14;
+  line-height: $lh-17;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $link-color;
+}
+
+@mixin link-22-27 {
+  font-weight: 700;
+  font-size: $fs-22;
+  line-height: $lh-27;
+  color: $link-color;
+}

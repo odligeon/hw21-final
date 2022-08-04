@@ -1,6 +1,10 @@
 @import "reset";
-@import "mixins";
-@import "vars";
+@import "_vars";
+@import "_mixins";
+@import "_gridSection";
+@import "_swiper";
+@import "_clients";
+@import "_recommendations";
 
 * {
   transition: all 0.2s ease-in-out;
@@ -11,10 +15,23 @@ html {
   color: $text-color;
 }
 
+
+
 h2 {
   font-weight: 700;
   font-size: 1.875rem;
   line-height: 2.285rem;
+}
+
+h3 > a {
+  font-weight: 700;
+  color: #24A3FF;
+}
+
+h4 {
+  font-size: 1rem;
+  line-height: $lh-20;
+  font-weight: 700;
 }
 
 a {
@@ -210,8 +227,24 @@ main {
       text-fill-color: transparent;
     }
 
-    #customer,#innovative,#business{
+    #customer, #innovative, #business {
       display: none;
     }
   }
+}
+
+.test1 {
+  background: #CACADB;
+  border-radius: 0 0 12px 12px;
+  width: calc(100% - 40px);
+  height: 10px;
+  margin: 0 auto;
+}
+
+.test2 {
+  background: #E7E7F2;
+  border-radius: 0 0 12px 12px;
+  width: calc(100% - 80px);
+  height: 10px;
+  margin: 0 auto;
 }

@@ -10,6 +10,8 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
 <main>
@@ -66,11 +68,7 @@
 	<section class="exp__section container">
 		<div class="exp__tabs">
 			<ul class="exp__list">
-				<!--				<li class="exp__item">Consistent</li>-->
-				<!--				<li class="exp__item">Customer oriented</li>-->
-				<!--				<li class="exp__item">Innovative</li>-->
-				<!--				<li class="exp__item">Business oriented</li>-->
-				<button class="exp__item tablink" onclick="changeTab(event,'consistent')">Consistent</button>
+				<button class="exp__item tablink active" onclick="changeTab(event,'consistent')">Consistent</button>
 				<button class="exp__item tablink" onclick="changeTab(event,'customer')">Customer oriented</button>
 				<button class="exp__item tablink" onclick="changeTab(event,'innovative')">Innovative</button>
 				<button class="exp__item tablink" onclick="changeTab(event,'business')">Business oriented</button>
@@ -110,60 +108,150 @@
 		<ul class="service__list">
 			<li class="service__item">
 				<div class="icon icon_wrapper">
-					<img src="" alt="" class="icon">
+					<img src="media/img/it-icon.svg" alt="" class="icon">
 				</div>
-				<a href="#" class="service__link">IT and e-commerce</a>
-				<p class="serice__desc">An endless stream of contracts, tax issues, labor relations, corporate papers -
+				<h3><a href="#" class="service__link">IT and e-commerce</a></h3>
+				<p class="service__desc">An endless stream of contracts, tax issues, labor relations, corporate papers -
 					legal work distracts you from doing business. But there is not much work to do to hire an in-house
 					lawyer.</p>
 			</li>
 			<li class="service__item">
 				<div class="icon icon_wrapper">
-					<img src="" alt="" class="icon">
+					<img src="media/img/compr-icon.svg" alt="" class="icon">
 				</div>
-				<a href="#" class="service__link">Comprehensive daily
-					legal support</a>
-				<p class="serice__desc">In addition, over time, the work will become the same type and uninteresting for
+				<h3><a href="#" class="service__link">Comprehensive daily
+					legal support</a></h3>
+				<p class="service__desc">In addition, over time, the work will become the same type and uninteresting
+					for
 					a full-time lawyer. And we know very well how difficult it is to find a good candidate with
 					experience in the field of information technology in Ukraine.</p>
 			</li>
 			<li class="service__item">
 				<div class="icon icon_wrapper">
-					<img src="" alt="" class="icon">
+					<img src="media/img/struct-icon.svg" alt="" class="icon">
 				</div>
-				<a href="#" class="service__link">Structuring corporate relationships</a>
-				<p class="serice__desc">Instead of just providing legal services, we will hire a lawyer or a whole team
+				<h3><a href="#" class="service__link">Structuring corporate relationships</a></h3>
+				<p class="service__desc">Instead of just providing legal services, we will hire a lawyer or a whole team
 					that will fit into the daily life of your company.</p>
 			</li>
 			<li class="service__item">
 				<div class="icon icon_wrapper">
-					<img src="" alt="" class="icon">
+					<img src="media/img/build-icon.svg" alt="" class="icon">
 				</div>
-				<a href="#" class="service__link">Building contractual relations</a>
-				<p class="serice__desc">Once a week, or week after month, you have your own lawyer by your side. Anyone
+				<h3><a href="#" class="service__link">Building contractual relations</a></h3>
+				<p class="service__desc">Once a week, or week after month, you have your own lawyer by your side. Anyone
 					in the company can catch it at the coffee maker and just talk about current affairs instead of
 					waiting for update status.</p>
 			</li>
 			<li class="service__item">
 				<div class="icon icon_wrapper">
-					<img src="" alt="" class="icon">
+					<img src="media/img/Protection-icon.svg" alt="" class="icon">
 				</div>
-				<a href="#" class="service__link">Protection of business, intellectual property</a>
-				<p class="serice__desc">And all the other time he will work on new diverse projects, so he will
+				<h3><a href="#" class="service__link">Protection of business, intellectual property</a></h3>
+				<p class="service__desc">And all the other time he will work on new diverse projects, so he will
 					definitely not stop in professional development. One way or another, all Axon Partners will work for
 					you instead of a corporate lawyer.</p>
 			</li>
 			<li class="service__item">
 				<div class="icon icon_wrapper">
-					<img src="" alt="" class="icon">
+					<img src="media/img/judi-icon.svg" alt="" class="icon">
 				</div>
-				<a href="#" class="service__link">Judicial representation</a>
-				<p class="serice__desc">Is it a small, medium-sized company or a market leader? Local business or
+				<h3><a href="#" class="service__link">Judicial representation</a></h3>
+				<p class="service__desc">Is it a small, medium-sized company or a market leader? Local business or
 					multinational company? Do you have your own legal department or not?</p>
 			</li>
 		</ul>
 	</section>
 </main>
+<div class="test1"></div>
+<div class="test2"></div>
+<section class="white__section-grid">
+	<div class="swiper mySwiper">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<div class="img__wrapper" title="Фотка Сан-Саныча">
+				</div>
+				<div class="slider__text__wrapper">
+					<div class="text-links">
+						<h3><a href="#">команда <img src="media/img/arrow-right.svg" alt=""></a></h3>
+						<span>Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</span>
+					</div>
+					<div class="text-gray">
+						<h4>Олександр Олександровський</h4>
+						<span>Керуючий партнер</span>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="img__wrapper" title="Фотка Сан-Саныча">
+				</div>
+				<div class="slider__text__wrapper">
+					<div class="text-links">
+						<h3><a href="#">команда <img src="media/img/arrow-right.svg" alt=""></a></h3>
+						<span>Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</span>
+					</div>
+					<div class="text-gray">
+						<h4>Олександр Олександровський</h4>
+						<span>Керуючий партнер</span>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="img__wrapper" title="Фотка Сан-Саныча">
+				</div>
+				<div class="slider__text__wrapper">
+					<div class="text-links">
+						<h3><a href="#">команда <img src="media/img/arrow-right.svg" alt=""></a></h3>
+						<span>Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</span>
+					</div>
+					<div class="text-gray">
+						<h4>Олександр Олександровський</h4>
+						<span>Керуючий партнер</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="swiper-pagination"></div>
+	</div>
+	<div class="clients__wrapper">
+		<h3 class="clients__header">They already trust us</h3>
+		<ul class="clients__list">
+			<li class="bg"><img src="media/img/clients logos/1.png" alt=""></li>
+			<li class="bg"><img src="media/img/clients logos/2.png" alt=""></li>
+			<li class="bg"><img src="media/img/clients logos/3.png" alt=""></li>
+			<li class="bg"><img src="media/img/clients logos/4.png" alt=""></li>
+			<li class="bg"><img src="media/img/clients logos/5.png" alt=""></li>
+			<li class="bg"><img src="media/img/clients logos/6.png" alt=""></li>
+			<li class="bg"><img src="media/img/clients logos/7.png" alt=""></li>
+			<li class="bg"><img src="media/img/clients logos/8.png" alt=""></li>
+			<li class="bg"><img src="media/img/clients logos/9.png" alt=""></li>
+			<li class="bg"><img src="media/img/clients logos/10.png" alt=""></li>
+			<li class="bg"><img src="media/img/clients logos/11.png" alt=""></li>
+			<li class="bg"><img src="media/img/clients logos/12.png" alt=""></li>
+		</ul>
+	</div>
+</section>
+<section class="recommendations">
+	<div class="recommendations__wrapper container">
+		<h3><a href="">Publications <img src="media/img/arrow-right.svg" alt=""></a></h3>
+		<span>We have something to tell</span>
+		<ul class="publications__list">
+			<li class="publication__item">
+				<img src="media/img/pub-1.png" alt="" class="publication__image">
+				<div class="publication__text">
+					<h4>Equity associate</h4>
+					<span class="date">April 22</span>
+					<div class="separator-line"></div>
+					<p class="publication__descr">I'm a jun on projects. I am a co-owner of a law firm. How it happened.
+						Before entering my parents told me that if I…</p>
+				</div>
+			</li>
+			<li class="publication__item"></li>
+			<li class="publication__item"></li>
+		</ul>
+	</div>
+</section>
 <script>
     function changeTab(evt, tabName) {
         var i, x, tablinks;
@@ -178,6 +266,14 @@
         document.getElementById(tabName).style.display = "flex";
         evt.currentTarget.className += " active";
     }
+
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
 </script>
 </body>
 </html>

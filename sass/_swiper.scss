@@ -1,0 +1,72 @@
+.swiper {
+  max-width: 1600px;
+  height: 344px;
+  display: flex;
+  flex-direction: column;
+
+  .swiper-slide {
+    @include flex;
+    background: #F5F5FA;
+    height: 298px;
+    border-radius: 12px;
+
+
+
+    .img__wrapper {
+      width: 400px;
+      height: 100%;
+      background-image: url("../media/img/alexander.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100% auto;
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+    }
+
+    .slider__text__wrapper {
+      background: #F5F5FA;
+      color: black;
+      max-width: 1200px;
+      display: flex;
+      flex-direction: column;
+      padding: 30px;
+      gap: 30px;
+
+      .text-links {
+        h3 {
+          margin-bottom: 5px;
+
+          a {
+            @include link-14-17;
+          }
+        }
+
+        span {
+          @include gradient-red-text;
+        }
+      }
+      .text-gray {
+        color: $gray;
+
+        h4 {
+          margin-bottom: 6px;
+        }
+        span {
+          font-weight: 400;
+          font-size: $fs-14;
+          line-height: $lh-22;
+        }
+      }
+
+    }
+  }
+
+  .swiper-pagination {
+    bottom: 0 !important;
+
+    .swiper-pagination-bullet {
+      height: 16px;
+      width: 16px;
+    }
+  }
+}
