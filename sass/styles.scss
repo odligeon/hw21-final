@@ -146,9 +146,11 @@ main {
     .symbol__wrapper {
       position: relative;
       z-index: 1;
-      left: calc(50% - 872.34px / 2 + 0.17px);
+      //left: calc(50% - 872.34px / 2 + 0.17px);
       top: -113px;
-      max-width: 872.34px;
+      //max-width: 872.34px;
+      display: flex;
+      justify-content: center;
 
       .main__image-bg {
         height: 1000px;

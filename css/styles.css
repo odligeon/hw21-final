@@ -645,9 +645,9 @@ main .splash .header .header__nav .header__nav__item:hover:after {
 main .splash .symbol__wrapper {
   position: relative;
   z-index: 1;
-  left: calc(50% - 436.17px + 0.17px);
   top: -113px;
-  max-width: 872.34px;
+  display: flex;
+  justify-content: center;
 }
 
 main .splash .symbol__wrapper .main__image-bg {

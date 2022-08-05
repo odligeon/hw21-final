@@ -1,0 +1,121 @@
+@media (max-width: 1440px) {
+  main .splash {
+    height: 800px;
+  }
+  main .splash .container {
+    padding: 50px 60px 0;
+    max-width: 1440px;
+  }
+  main .splash .symbol__wrapper .main__image-bg {
+    height: auto;
+  }
+  main .exp__section {
+    padding: 0 180px;
+  }
+  .grid__section {
+    padding: 0 60px;
+  }
+  .white__section-grid {
+    padding-bottom: 0;
+  }
+  .white__section-grid .swiper {
+    height: 392px;
+  }
+  .white__section-grid .swiper .swiper-wrapper {
+    padding: 0 60px;
+    max-width: 1320px;
+  }
+  .white__section-grid .swiper .swiper-wrapper .swiper-slide {
+    margin-right: 60px !important;
+    max-width: 1320px !important;
+    height: 344px;
+  }
+  .white__section-grid .swiper .swiper-wrapper .swiper-slide .img__wrapper {
+    flex: none;
+  }
+  .clients__wrapper .clients__list {
+    border-radius: 0;
+  }
+  .recommendations__wrapper.container {
+    padding: 30px 60px 0;
+  }
+  .recommendations__wrapper.container .publications__list .publication__item {
+    max-width: 420px;
+    height: 450px;
+  }
+  .recommendations__wrapper.container .publications__list .publication__item .publication__image {
+    width: 100%;
+    object-fit: fill;
+  }
+  .footer .container {
+    padding: 0 60px;
+  }
+}
+@media (max-width: 1024px) {
+  main .splash {
+    height: 768px;
+  }
+  main .splash .symbol__wrapper .main__image-bg {
+    height: 768px;
+  }
+  main .exp__section {
+    padding: 0 60px;
+  }
+  .white__section-grid .swiper {
+    height: 574px;
+  }
+  .white__section-grid .swiper .swiper-wrapper {
+    max-width: 904px;
+  }
+  .white__section-grid .swiper .swiper-wrapper .swiper-slide {
+    height: 528px;
+    width: 904px !important;
+    margin-right: 150px !important;
+  }
+  .white__section-grid .swiper .swiper-wrapper .swiper-slide .img__wrapper {
+    background-size: cover;
+  }
+  .recommendations__wrapper.container .publications__list .publication__item {
+    flex: 1;
+    height: 556px;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  main .splash {
+    margin-bottom: 318px;
+  }
+  .header__logo {
+    position: absolute;
+    top: 105px;
+  }
+  .header__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 105px;
+    align-items: baseline;
+  }
+  main .splash .symbol__wrapper {
+    top: -212px;
+  }
+  main .splash .symbol__wrapper .main__image-bg {
+    height: 1024px;
+  }
+  main .exp__section {
+    flex-direction: column;
+  }
+  main .exp__section .exp__tabs {
+    max-width: 100%;
+  }
+  main .exp__section .exp__tabs .exp__list {
+    flex-direction: row;
+    overflow-x: auto !important;
+    width: 768px;
+  }
+  main .exp__section .divider-line {
+    height: 4px;
+    width: 100%;
+  }
+}
