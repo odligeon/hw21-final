@@ -9,8 +9,7 @@
     background: #F5F5FA;
     height: 298px;
     border-radius: 12px;
-
-
+    overflow: hidden;
 
     .img__wrapper {
       width: 400px;
@@ -38,6 +37,15 @@
 
           a {
             @include link-14-17;
+
+            .arrow-right {
+              display: inline-block;
+              width: 10px;
+              height: 10px;
+              background-color: $link-color;
+              -webkit-mask: url(../media/img/arrow-right.svg) no-repeat center;
+              mask: url(../media/img/arrow-right.svg) no-repeat center;
+            }
           }
         }
 
@@ -45,12 +53,14 @@
           @include gradient-red-text;
         }
       }
+
       .text-gray {
         color: $gray;
 
         h4 {
           margin-bottom: 6px;
         }
+
         span {
           font-weight: 400;
           font-size: $fs-14;

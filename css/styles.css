@@ -143,6 +143,7 @@ a {
   background: #F5F5FA;
   height: 298px;
   border-radius: 12px;
+  overflow: hidden;
 }
 
 .swiper .swiper-slide .img__wrapper {
@@ -177,6 +178,15 @@ a {
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #24A3FF;
+}
+
+.swiper .swiper-slide .slider__text__wrapper .text-links h3 a .arrow-right {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #24A3FF;
+  -webkit-mask: url(../media/img/arrow-right.svg) no-repeat center;
+  mask: url(../media/img/arrow-right.svg) no-repeat center;
 }
 
 .swiper .swiper-slide .slider__text__wrapper .text-links span {
@@ -509,8 +519,21 @@ a {
   font-weight: 700;
 }
 
+.arrow-right {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #24A3FF;
+  -webkit-mask: url(../media/img/arrow-right.svg) no-repeat center;
+  mask: url(../media/img/arrow-right.svg) no-repeat center;
+}
+
 .hover:hover {
   color: #F0145A !important;
+}
+
+.hover:hover .arrow-right {
+  background-color: #F0145A !important;
 }
 
 .hover-gb:hover {
@@ -650,8 +673,9 @@ main .splash .symbol__wrapper .button-wrapper {
   bottom: 30px;
 }
 
-main .splash .symbol__wrapper .button-wrapper .testtt {
-  display: block;
+main .splash .symbol__wrapper .button-wrapper .arrow-down {
+  position: relative;
+  top: 2px;
   width: auto;
   height: 100%;
   background-color: #fff;
@@ -659,7 +683,7 @@ main .splash .symbol__wrapper .button-wrapper .testtt {
   mask: url(../media/img/button-vector.svg) no-repeat center;
 }
 
-main .splash .symbol__wrapper .button-wrapper .testtt:hover {
+main .splash .symbol__wrapper .button-wrapper .arrow-down:hover {
   background-color: #F0145A;
 }
 

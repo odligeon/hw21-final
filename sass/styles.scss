@@ -40,9 +40,22 @@ a {
   font-weight: 700;
 }
 
+.arrow-right {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: $link-color;
+  -webkit-mask: url(../media/img/arrow-right.svg) no-repeat center;
+  mask: url(../media/img/arrow-right.svg) no-repeat center;
+}
+
 .hover:hover {
   color: $accent-color !important;
+  .arrow-right {
+    background-color: $accent-color !important;
+  }
 }
+
 
 .hover-gb:hover {
   background-color: $accent-color;
@@ -159,8 +172,9 @@ main {
         left: calc(50% - 42px / 2);
         bottom: 30px;
 
-        .testtt {
-          display: block;
+        .arrow-down {
+          position: relative;
+          top: 2px;
           width: auto;
           height: 100%;
           background-color: #fff;
