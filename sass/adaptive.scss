@@ -156,4 +156,62 @@
       width: 100%;
     }
   }
+  .service__list .service__item {
+    max-width: none;
+    width: 294px;
+  }
+  .white__section-grid .swiper {
+    height: 982px;
+
+    .swiper-pagination {
+      max-width: 768px;
+    }
+
+    .swiper-wrapper {
+      height: 936px;
+
+      .swiper-slide {
+        width: 648px !important;
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: baseline;
+        margin-right: 400px !important;
+
+        .img__wrapper {
+          width: 648px;
+          height: 500px;
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+        }
+      }
+
+      .slider__text__wrapper {
+        width: 648px;
+      }
+    }
+  }
+  .clients__wrapper .clients__list .bg {
+    flex-basis: 33.3%;
+  }
+
+  .recommendations__wrapper.container .publications__list {
+    flex-wrap: wrap;
+
+
+    .publication__item {
+      height: 514px;
+
+      &:last-child {
+        flex-basis: 100%;
+        max-width: none;
+        height: 388px;
+      }
+    }
+  }
+  .copyrights_wrapper {
+    position: absolute;
+    width: calc(100% - 120px);
+    text-align: end;
+  }
 }
