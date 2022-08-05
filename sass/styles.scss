@@ -5,6 +5,7 @@
 @import "_swiper";
 @import "_clients";
 @import "_recommendations";
+@import "_footer";
 
 * {
   transition: all 0.2s ease-in-out;
@@ -13,8 +14,8 @@
 html {
   font: 400 16px Montserrat, sans-serif;
   color: $text-color;
+  scroll-behavior: smooth;
 }
-
 
 
 h2 {
@@ -39,12 +40,23 @@ a {
   font-weight: 700;
 }
 
+.hover:hover {
+  color: $accent-color !important;
+}
+
+.hover-gb:hover {
+  background-color: $accent-color;
+}
+
 .container {
   padding: 0 160px;
   max-width: 1920px;
   margin: auto;
 }
 
+.button {
+  color: #24A3FF;
+}
 
 main {
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%) no-repeat;
@@ -147,12 +159,28 @@ main {
         left: calc(50% - 42px / 2);
         bottom: 30px;
 
+        .testtt {
+          display: block;
+          width: auto;
+          height: 100%;
+          background-color: #fff;
+          -webkit-mask: url(../media/img/button-vector.svg) no-repeat center;
+          mask: url(../media/img/button-vector.svg) no-repeat center;
+          &:hover {
+            background-color: $accent-color;
+          }
+        }
+
         .button-scroll {
           opacity: 0.5;
           border: 2px solid #FFFFFF;
           border-radius: 50%;
           display: block;
           height: 100%;
+
+          &:hover {
+            border-color: $accent-color;
+          }
         }
 
         img {

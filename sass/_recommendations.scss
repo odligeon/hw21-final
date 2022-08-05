@@ -1,7 +1,67 @@
+$publication-height: 430px;
+
 .recommendations {
   background-color: $bg-gray;
 
   .recommendations__wrapper {
     padding-top: 30px;
+
+    h3 {
+      @include link-14-17;
+      margin-bottom: 10px;
+    }
+
+    .recommendations__header {
+      @include gradient-red-text;
+      margin-bottom: 30px;
+      display: block;
+    }
+
+    .publications__list {
+      @include flex;
+      align-items: baseline;
+      gap: 30px;
+
+      .publication__item {
+        background: #FFFFFF;
+        border-radius: 8px;
+        height: $publication-height;
+
+        .publication__image {
+          height: 200px;
+        }
+
+        .publication__text {
+          padding: 30px;
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+
+          h4 > a {
+            color: $link-color;
+          }
+
+          .date {
+            font-size: $fs-12;
+            line-height: $lh-15;
+            color: $gray;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 700;
+          }
+
+          .separator-line {
+            height: 4px;
+            background: #E6E6F0;
+          }
+
+          .publication__descr {
+            color: black;
+            font-size: $fs-14;
+            line-height: $lh-22;
+          }
+        }
+      }
+    }
   }
 }

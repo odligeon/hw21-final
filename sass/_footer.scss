@@ -1,0 +1,95 @@
+.footer {
+  background-color: #F5F5FA;
+  padding: 30px 0;
+
+  .separator-line {
+    height: 2px;
+    background: #E6E6F0;
+    margin-bottom: 30px;
+  }
+
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .footer__address {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 21px;
+
+      .footer-up {
+        display: flex;
+        align-items: center;
+
+        a {
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          font-size: $fs-12;
+          line-height: $lh-15;
+        }
+
+        .address__info__wrapper {
+
+          .address__info {
+            color: #323264;
+            line-height: $lh-20;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            &:after {
+              @include separator;
+              margin: 0;
+              margin-right: 10px;
+              background-color: #B3B3BA;
+            }
+          }
+        }
+      }
+
+      .footer-down {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+
+        .footer__fb-logo {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+
+          &:after {
+            @include separator;
+            margin: 0;
+            background-color: #B3B3BA;
+          }
+        }
+
+        .phone {
+          color: #46466E;
+          line-height: $lh-20;
+          display: flex;
+          gap: 10px;
+          align-items: center;
+
+          &:after {
+            @include separator;
+            margin: 0;
+            background-color: #B3B3BA;
+          }
+        }
+
+        .email {
+          color: #24A3FF;
+          line-height: $lh-20;
+        }
+      }
+    }
+
+    .copyrights {
+      color: $gray;
+      line-height: $lh-20;
+    }
+  }
+}
